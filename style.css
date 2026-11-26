@@ -309,3 +309,7 @@ header::after {
   .js .proj.rev { opacity: 1; translate: 0 0; scale: 1; }
   .js .proj .art { clip-path: none; }
 }
+
+/* leetcode stat is a link */
+.stats > a { padding: 12px 18px; border: 1px solid var(--line); border-radius: 14px; background: #17121499; color: var(--text); }
+.stats > a:hover { border-color: var(--hot); }
