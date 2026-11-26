@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anushka Saini | Data &amp; Machine Learning</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="bar"></div>
+
+<nav>
+  <a href="#top" class="logo">anushka<b>.</b></a>
+  <div class="links">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#journey">Journey</a>
+    <a href="#skills">Skills</a>
+    <a href="#certs">Certificates</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a href="resume.pdf" target="_blank" class="btn sm">Resume ↗</a>
+</nav>
+
+<header id="top">
+  <div class="stats">
+    <div><strong data-n="8.44">8.44</strong><span>CGPA</span></div>
+    <div><strong data-n="9.52">9.52</strong><span>Sem 4 SGPA</span></div>
+    <div><strong data-n="200" data-s="+">200+</strong><span>LeetCode solved</span></div>
+    <div><strong data-n="4">4</strong><span>Completed projects</span></div>
+  </div>
+  <div class="intro">
+    <p class="tag up">B.Tech CSE · Data Science · Bennett University</p>
+    <h1 class="up">Anushka<br>Saini<b>.</b></h1>
+    <p class="lead up">I turn messy data into <em>decisions</em> you can act on, using Python, SQL and machine learning.</p>
+    <div class="row up">
+      <a href="#work" class="btn">See my work ↓</a>
+      <a href="#contact" class="btn ghost">Say hello</a>
+    </div>
+  </div>
+  <div class="photo">
+    <canvas id="globe" aria-hidden="true"></canvas>
+    <div class="ring"></div>
+    <img src="me.webp" alt="Anushka Saini">
+  </div>
+</header>
+
+<div class="strip" aria-hidden="true">
+  <div>
+    <span>Python ✦ SQL ✦ Power BI ✦ LightGBM ✦ SHAP ✦ Time Series ✦ FastAPI ✦ Pandas ✦&nbsp;</span>
+    <span>Python ✦ SQL ✦ Power BI ✦ LightGBM ✦ SHAP ✦ Time Series ✦ FastAPI ✦ Pandas ✦&nbsp;</span>
+  </div>
+</div>
+
+<section id="work">
+  <h2 class="rev">Things I've <em>built</em></h2>
+  <article class="proj rev" style="--i:0">
+    <div class="art"><img src="sku.webp" alt="Forecast explorer dashboard" loading="lazy"></div>
+    <div>
+      <p class="tag">Team of 3</p>
+      <h3><small>01</small>Demand Forecasting</h3>
+      <p>Retail demand forecasting and stock planning on Walmart M5 data, asking which approach actually helps a retailer plan stock.</p>
+      <ul class="pills"><li>Python</li><li>XGBoost</li><li>Prophet</li><li>PyTorch</li><li>Optuna</li><li>Streamlit</li></ul>
+      <ul class="points"><li>21 methods compared on 150 items, 28 days ahead</li><li>28% smaller error than copying last week</li></ul>
+      <div class="go"><a href="https://sku-demand-forecasting-6skpfqcuzaiw6jrncevnkk.streamlit.app/" target="_blank">Live demo →</a><a href="https://github.com/anushka-saini/sku-demand-forecasting" target="_blank">GitHub →</a></div>
+    </div>
+  </article>
+  <article class="proj rev" style="--i:1">
+    <div class="art"><img src="fraud.webp" alt="Fraud case review screen" loading="lazy"></div>
+    <div>
+      <p class="tag">Team project</p>
+      <h3><small>02</small>Fraud Detection</h3>
+      <p>Cost-aware system that routes each payment to Allow, Review or Block, with explanations for analysts. Built on simulated PaySim data.</p>
+      <ul class="pills"><li>LightGBM</li><li>SHAP</li><li>FastAPI</li><li>React</li><li>PostgreSQL</li><li>Docker</li></ul>
+      <ul class="points"><li>PR-AUC 0.873 on held-out days</li><li>None of 822 frauds allowed through; 2.69% of genuine payments reviewed</li></ul>
+      <div class="go"><a href="https://github.com/anushka-saini/Cost-Aware-Fraud-Detection-with-Delay-Aware-Decisioning" target="_blank">GitHub →</a></div>
+    </div>
+  </article>
+  <article class="proj rev" style="--i:2">
+    <div class="art"><img src="sql.webp" alt="Chart of accuracy by prompt version" loading="lazy"></div>
+    <div>
+      <p class="tag">Team of 3 · Prompt Engineering course</p>
+      <h3><small>03</small>SchemaSense</h3>
+      <p>Ask a shop database a question in plain English and get the SQL, the answer and a safety check.</p>
+      <ul class="pills"><li>Python</li><li>SQLite</li><li>Groq gpt-oss-120b</li><li>Streamlit</li></ul>
+      <ul class="points"><li>Held-out accuracy: 7.5% with the question only, 88.3% with the best prompts (provisional)</li><li>All 18 red-team attacks stopped by three safety layers</li></ul>
+      <div class="go"><a href="https://schemasense-nl2sql-2fnmqvdehcyy9jphkq5m9t.streamlit.app/" target="_blank">Live demo →</a><a href="https://github.com/anushka-saini/Askbase-nl2sql" target="_blank">GitHub →</a></div>
+    </div>
+  </article>
+  <article class="proj rev" style="--i:3">
+    <div class="art"><div class="flow"><span>Detect</span><b>→</b><span>Localize</span><b>→</b><span>Prioritize</span></div></div>
+    <div>
+      <p class="tag">In progress</p>
+      <h3><small>04</small>GhostWater AI</h3>
+      <p>Water leak detection from pressure and flow sensors, built to cope with fewer sensors. Uses the simulated BattLeDIM benchmark.</p>
+      <ul class="pills"><li>Python</li><li>Time series</li><li>Anomaly detection</li></ul>
+      <ul class="points"><li>Goal: estimate the leak zone</li><li>Goal: rank which alerts to inspect first</li></ul>
+      <div class="go"><a href="https://github.com/anushka-saini/ghostwater-ai" target="_blank">GitHub →</a></div>
+    </div>
+  </article>
+  <h4 class="more">Earlier work</h4>
+  <div class="grid">
+    <a class="box mini" href="https://github.com/anushka-saini/mediqueue-hospital-queue-management-system" target="_blank"><h4>Mediqueue →</h4><p>Flask, SQL, JavaScript</p></a>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="rev">A little <em>about me</em></h2>
+  <div class="two rev">
+    <p class="big">I'm a Computer Science student specialising in Data Science. I care about results that <em>hold up</em>, not just ones that look good.</p>
+    <p>I work across statistical analysis, visualisation and predictive modelling, with a base in Java and data structures (200+ LeetCode problems solved). I'm looking for internships in data, analytics and AI.</p>
+  </div>
+</section>
+
+<section id="journey">
+  <h2 class="rev">The story <em>so far</em></h2>
+  <ol class="line">
+    <li class="rev"><b>School</b><div><h4>Delhi Public School, Roorkee</h4><p>Schooling up to Class XII</p></div></li>
+    <li class="rev"><b>2024</b><div><h4>Started B.Tech CSE</h4><p>Bennett University, Greater Noida (2024 to 2028)</p></div></li>
+    <li class="rev"><b>2025</b><div><h4>First projects</h4><p>Mediqueue, a hospital queue system</p></div></li>
+    <li class="rev"><b>2026</b><div><h4>Applied machine learning</h4><p>Demand forecasting, fraud detection, SchemaSense and Dean's List with a 9.52 SGPA</p></div></li>
+  </ol>
+  <div class="grid">
+    <div class="box rev"><h4>Social Media Head</h4><p>Mobilon Club</p></div>
+    <div class="box rev"><h4>Technical Member</h4><p>RPA Club</p></div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="dots" aria-label="Technical skills">TECHNICAL SKILLS</h2>
+  <div class="stack">
+    <div class="set rev" style="--d:0"><h4><i></i>Programming &amp; Core</h4><ul><li>Python</li><li>Java</li><li>SQL</li><li>DSA</li></ul></div>
+    <div class="set rev" style="--d:1"><h4><i></i>Data Analysis</h4><ul><li>Data Analysis</li><li>Excel</li><li>Power BI</li><li>Time Series Analysis</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li><li>Seaborn</li></ul></div>
+    <div class="set rev" style="--d:2"><h4><i></i>Machine Learning &amp; AI</h4><ul><li>Machine Learning</li><li>Deep Learning</li><li>NLP</li><li>Scikit-learn</li><li>XGBoost</li><li>LightGBM</li><li>SHAP</li></ul></div>
+    <div class="set rev" style="--d:3"><h4><i></i>Deployment &amp; Web</h4><ul><li>FastAPI</li><li>REST APIs</li><li>Streamlit</li><li>MLOps</li><li>Git</li><li>HTML</li><li>CSS</li></ul></div>
+  </div>
+</section>
+
+<section id="certs">
+  <h2 class="dots" aria-label="Certifications">CERTIFICATIONS</h2>
+  <div class="certs">
+    <a class="cert rev" href="https://coursera.org/verify/XG6XD5051LNT" target="_blank">
+      <img src="c1.webp" alt="Foundations: Data, Data, Everywhere certificate" loading="lazy">
+      <h4>Foundations: Data, Data, Everywhere</h4><p>Google · Coursera · Nov 2025</p><span>Verify →</span>
+    </a>
+    <a class="cert rev" href="https://coursera.org/verify/EBC9KA1WRTUT" target="_blank">
+      <img src="c4.webp" alt="Text Mining and Analytics certificate" loading="lazy">
+      <h4>Text Mining and Analytics</h4><p>University of Illinois · Coursera · Mar 2026</p><span>Verify →</span>
+    </a>
+    <a class="cert rev" href="https://www.hackerrank.com/certificates/iframe/f7c102323453" target="_blank">
+      <img src="c2.webp" alt="Problem Solving (Intermediate) certificate" loading="lazy">
+      <h4>Problem Solving (Intermediate)</h4><p>HackerRank · Oct 2026</p><span>Verify →</span>
+    </a>
+    <a class="cert rev" href="https://www.credly.com/badges/6d4a9dde-5eee-47f2-ad0d-5181fda026ea" target="_blank">
+      <img src="c3.webp" alt="Generative AI Foundations certificate" loading="lazy">
+      <h4>Generative AI Foundations</h4><p>AWS Academy · Oct 2026 · 12 hours</p><span>Verify →</span>
+    </a>
+    <div class="cert rev">
+      <img src="c5.webp" alt="NPTEL soft skills certificate" loading="lazy">
+      <h4>Developing Soft Skills and Personality</h4><p>NPTEL, IIT Kanpur · Aug–Oct 2026 · Elite, 95%</p>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="cta rev">
+    <h2>Got a data problem?<br><em>Let's talk.</em></h2>
+    <div class="row">
+      <a class="btn dark" href="mailto:anushkaaa2022@gmail.com">Email me</a>
+      <a class="btn out" href="https://www.linkedin.com/in/anushka-saini-a45491358/" target="_blank">LinkedIn ↗</a>
+      <a class="btn out" href="https://github.com/anushka-saini" target="_blank">GitHub ↗</a>
+    </div>
+  </div>
+  <p class="tag">© 2026 Anushka Saini</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="fx.js"></script>
+</body>
+</html>
